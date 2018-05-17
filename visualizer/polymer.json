@@ -1,0 +1,16 @@
+{
+  "npm": true,
+  "builds": [
+    {
+      "name": "default",
+      "preset": "es6-bundled",
+      "addServiceWorker": false,
+      "addPushManifest": false
+    }
+  ],
+  "lint": {
+    "rules": [
+      "polymer-3"
+    ]
+  }
+}

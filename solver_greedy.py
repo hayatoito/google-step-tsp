@@ -15,22 +15,20 @@ def solve(cities):
 
     dist = [[0] * N for i in range(N)]
     for i in range(N):
-        for j in range(N):
+        for j in range(i, N):
             dist[i][j] = dist[j][i] = distance(cities[i], cities[j])
 
     current_city = 0
     unvisited_cities = set(range(1, N))
-    solution = [current_city]
-
-    def distance_from_current_city(to):
-        return dist[current_city][to]
+    visited_cities = [current_city]
 
     while unvisited_cities:
-        next_city = min(unvisited_cities, key=distance_from_current_city)
+        next_city = min(
+            unvisited_cities, key=lambda unvisited_city: dist[current_city][unvisited_city])
         unvisited_cities.remove(next_city)
-        solution.append(next_city)
+        visited_cities.append(next_city)
         current_city = next_city
-    return solution
+    return visited_cities
 
 
 if __name__ == '__main__':

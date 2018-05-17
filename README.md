@@ -1,12 +1,7 @@
-Google STEP 2017: Code Readability, Code Review (with NP)
+Google STEP 2018: Travelling Salesman Problem Challenges
 ====
 
 [Hayato Ito](https://github.com/hayatoito) (hayato@google.com)
-
-
-Travelling Salesman Problem Challenges
-====
-
 
 Quick Links
 ----
@@ -14,7 +9,7 @@ Quick Links
 - [Scoreboard]
 - [GitHub Issues]
 
-[scoreboard]: https://docs.google.com/spreadsheets/d/1U7vRZRVXwCuSLbIQlMbOHHTmBz4GYeGlJx02JgGvXug/edit?usp=sharing
+[scoreboard]: https://docs.google.com/spreadsheets/d/1Aa_NNQf7sFANuHKt0FTvUBQ83QO3OOKZjifhsmjOxqc/edit?usp=sharhing
 [GitHub Issues]: https://github.com/hayatoito/google-step-tsp/issues
 
 Problem Statement
@@ -53,15 +48,15 @@ install Python 3 if you want to run the scripts, though running the scripts is n
 
 There are 7 challenges of TSP in the assignment, from N = 5 to N = 2048:
 
-  | Challenge    | N (= the number of cities) | Input file  | Output (Solution) file |
+  | Challenge    | N (= the number of cities) | Input file  | Output file            |
   | ------------ | -------------------------: | ----------- | ---------------------- |
-  | Challenge 0  |                          5 | input_0.csv | solution_yours_0.csv   |
-  | Challenge 1  |                          8 | input_1.csv | solution_yours_1.csv   |
-  | Challenge 2  |                         16 | input_2.csv | solution_yours_2.csv   |
-  | Challenge 3  |                         64 | input_3.csv | solution_yours_3.csv   |
-  | Challenge 4  |                        128 | input_4.csv | solution_yours_4.csv   |
-  | Challenge 5  |                        512 | input_5.csv | solution_yours_5.csv   |
-  | Challenge 6  |                       2048 | input_6.csv | solution_yours_6.csv   |
+  | Challenge 0  |                          5 | input_0.csv | output_0.csv               |
+  | Challenge 1  |                          8 | input_1.csv | output_1.csv               |
+  | Challenge 2  |                         16 | input_2.csv | output_2.csv               |
+  | Challenge 3  |                         64 | input_3.csv | output_3.csv               |
+  | Challenge 4  |                        128 | input_4.csv | output_4.csv               |
+  | Challenge 5  |                        512 | input_5.csv | output_5.csv               |
+  | Challenge 6  |                       2048 | input_6.csv | output_6.csv               |
 
 See *Data Format Specification* section to know the format of input and output files.
 
@@ -70,15 +65,9 @@ See *Data Format Specification* section to know the format of input and output f
 In coding phase:
 
 * Write a program, solveing each TSP by designing and implementing an algorithm.
-* Overwrite each solution file, `solution_yours_{0-6}.csv`, with the output of your program.
+* Overwrite each output file, `output_{0-6}.csv`, with the output of your program.
 * Enter the *path length* of your solution in the [scoreboard], for each challenge. Needless to say, a shorter path is better then a longer path.
 * Enter your git repository's location in the [scoreboard].
-
-In review phase:
-
-* Review other student's published code, and send at least one [pull request].
-
-[pull request]: https://help.github.com/categories/collaborating-with-issues-and-pull-requests/
 
 ### An optional task (Speed challenge)
 
@@ -90,37 +79,37 @@ Input your program's execution time in the [scoreboard]. Faster (smaller) is bet
 
 You can measure the execution time by `time` command. For example,
 
-  ```shellsession
-  $ time yourprogram input_6.csv solution_yours_6.csv
-  2.96s user 0.07s system 97% cpu 3.116 total
-  ```
+```shellsession
+$ time yourprogram input_6.csv solution_yours_6.csv
+2.96s user 0.07s system 97% cpu 3.116 total
+```
 
-  In this case, your score is `3.116` (s).
+In this case, your score is `3.116` (s).
 
 ### Visualizer
 
-The demo page of the visualizer is [here](http://hayatoito.github.io/google-step-tsp/visualizer/).
+The demo page of the visualizer is [here](http://hayato.io/google-step-tsp/visualizer/build/default/).
 
-The assignment includes a helper Web page, `visualizer/index.html`, which
+The assignment includes a helper Web page, `visualizer/build/default/index.html`, which
 visualizes your solutions. You need to run a HTTP server on your local machine
 to access the visualizer. Any HTTP server is okay. If you are not sure how to
 run a web server, use the following command to run the HTTP server included in
 the assignment. Make sure that you are in the top directory of the assignment
 before running the command.
 
-  ``` shellsession
-  ./nocache_server.py # For Python 3
-  ./nocache_server.py2.py # If you don’t want to install Python 3
-  ```
+``` shellsession
+python3 -m http.server
+# python2 -m SimpleHTTPServer # If you don’t have Python 3
+```
 
 Then, open a browser and navigate to the
-[http://localhost:8000/visualizer/](http://localhost:8000/visualizer/).
+[http://localhost:8000/visualizer/build/default/](http://localhost:8000/visualizer/build/default/).
 
 Visualizer was only tested by Google Chrome. Using the visualizer is up-to you. You don’t have to use the visualizer to finish the assignment. The
 visualizer is provided for the purpose of helping you understand the problem.
 
 Once you publish a git repository, you can also enter the URL of a visualizer for your solutions in the [scoreboard]
-(e.g. [http://yourname.github.io/google-step-tsp/visualizer/](http://yourname.github.io/google-step-tsp/visualizer/)).
+(e.g. [http://your_github_account_name.github.io/google-step-tsp/visualizer/build/default/](http://your_github_account_name.github.io/google-step-tsp/visualizer/build/default/)).
 
 Data Format Specification
 ----
@@ -179,16 +168,16 @@ These formats are requirements for the visualizer, which can take only properly 
 Schedule
 ----
 
-### The class begins: 2017-06-23 (Fri) 5:00pm (JST)
+### The class begins: 2018-06-22 (Fri) 5:00pm (JST)
 
-The class starts. You must bring your laptop.
+The class starts. You are strongly encouraged to bring your laptop.
 
-This class is a kick-off class for the assignment, and will be basically 3 hours
-hackathon. You are expected to understand the problem and solve a challenge
-with a small N. You can also try a challenge with a large N if you can move
-fast in the class.
+Befoer explaining assignments, I'll give you a special lecture, called "How the computer works" at the beginning.
 
-### Coding phase: From: 2017-06-23 (Fri) 8:00pm - To: 2017-06-30 (Fri) 5:00pm
+Then, I'll explain this "TSP" assignements.
+You are expected to understand the problem and solve a challenge with a small N in the class, if we have enough time.
+
+### Coding phase: From: 2018-06-22 (Fri) 8:00pm - To: 2017-06-29 (Fri) 5:00pm
 
 The deadline of the final submission is the next Friday.
 
@@ -208,33 +197,64 @@ Note:
 - You can see and use code written in other students freely.
 - Please try to publish your code as much as possible so that other students can see your code.
 
-#### (Optional) Office hours: (2017-06-27 (Tue) 5:00pm)
+#### (Optional) Office hours: (2017-06-26 (Tue) 5:00pm - )
 
-I will hold office hours on next Tuesday at Google Tokyo office. I will be available until 9:00pm. You can come anytime and leave anytime.
+I will hold office hours on next Tuesday at Google Tokyo office. I will be available until nealy 10:00pm. You can come anytime and leave anytime.
 
-How to attend office hours: I will announce it later at [GitHub Issues].
+How to attend office hours: I will announce it later at [GitHub Issues] or other places.
 
-#### (Optional) Yet another optional task: Challenge 7: 2017-06-28 (Wed)
+As a bunus for ofifce hours attendees, I have a plan to explain the advanced topics very roughly: 'Understand how program runs, in a hard way'.
+
+These topcs are very basic fundamental knowledge to understand how your program (and/or programming languages) runs and are represened in your computer. These are optional topics, but if are interested in, please join us anytime.
+
+#### (Optional) Yet another optional task: Challenge 7: 2017-06-27 (Wed)
 
 I will announce it on 2017-06-28 (Wed) at [GitHub Issues].
 
-### Review phase: From: 2017-06-30 (Fri) 5:00pm - To: 2017-07-07 (Fri) 5:00pm
+What’s included in the assignment
+----
 
-The next class starts in the next Friday. we have one hour wrap-up time. You may want to bring your laptop. Be ready to explain your code and algorithm.
+To help you understand the problem, there are some sample scripts / resources
+in the assignment, including, but not limited to:
 
-After the class, you have one week to review other students' code:
+- `solver_random.py` - Sample stupid solver. You never lose to this stupid one.
+- `sample/random_{0-6}.csv` - Sample output files by solver_random.py.
+- `solver_greedy.py` - Sample solver using the greedy algorithm. You should beat this definitely.
+- `sample/greedy_{0-6}.csv` - Sample output files by solver_greedy.py.
+- `sample/sa_{0-6}.csv` - Yet another sample output files. I expect all of you will beat this one too. The solver itself is not included intentionally.
+- `output_{0-6}.csv` - You should overwrite these files with your program's output.
+- `output_verifier.py` - Try to validate your output files and print the path length.
+- `input_generator.py` - Python script which was used to create input files, `input_{0-6}.csv`
+- `visualizer/` - The directory for visualizer.
 
-- You are expected to send at least one pull request in this week. Please choose any repository to where you want to send a pull request.
-- You might receive a pull request from other students. Please look an incoming pull request and discuss it with a contributor, and merge the pull request to your repository if the pull request looks good to you.
-- You can send any number (one or more) of pull requests to any number of repositories. That is up to you.
-- When sending a pull request, please mention **@hayatoito** in a pull request's comment so I can notice a pull request.
-  I'll try to join the discussion in a pull request, and might review code as I am doing in Google.
+Details are intentionally omitted here. It is your responsibility to understand the contents of the repository.
 
-I'll announce the most valuable contributor at the end of the review phase. Please contribute to other student's repository as much as possible.
+Collaboration Rules / Discussions / Code of Conduct
+----
+
+### Team
+
+In this year, work as a member of a team. We dicide a team on Friday.
+Bacially, we divide people into teams by programming languages you use.
+
+Please use one GitHub repository per a team. You should mention who are the members
+in `README.md` file in the repository. Please feel free to upate `README.md` file.
+
+Regarding office hours, I recommend each team's members to attend the office hours at the same time, as much as team members can.
 
 ##### Hints
 
-Since GitHub doesn't allow forking the same origin repository more than once into your account, the followings might be helpful to send a pull request.
+It's up to each team how to collaborate. I strongly suggest:
+
+- Use GitHub's isseus on team member's repository.
+- Use slack chat. I can respond there.
+
+Regarding "PR" ([pull request]), the following are quick hints:
+
+[pull request]: https://help.github.com/categories/collaborating-with-issues-and-pull-requests/
+
+
+Since GitHub doesn't allow forking the same origin repository more than once into your account, the followings might be helpful to send a pull request to other team member's repository.
 
 Assuming that:
 
@@ -264,31 +284,11 @@ In your google-step-tsp directory, which was cloned from https://github.com/alic
     # Create a pull request at https://github.com/alice/google-step-tsp.git with:
     # base fork: bob/google-step-tsp, base: gh-pages  .... head fork: alice/google-step-tsp, compare: bob-gh-pages
 
-What’s included in the assignment
-----
-
-To help you understand the problem, there are some sample scripts / resources
-in the assignment, including, but not limited to:
-
-- `solver_random.py` - Sample stupid solver. You never lose to this stupid one.
-- `solution_random_{0-6}.csv` - Sample solutions by solver_random.py.
-- `solver_greedy.py` - Sample solver using the greedy algorithm. You should beat this definitely.
-- `solution_greedy_{0-6}.csv` - Sample solutions by solver_greedy.py.
-- `solution_sa_{0-6}.csv` - Yet another sample solutions. I expect all of you will beat this one too. The solver itself is not included intentionally.
-- `solution_yours_{0-6}.csv` - You should overwrite these files with your solution.
-- `solution_verifier.py` - Try to validate your solution and print the path length.
-- `input_generator.py` - Python script which was used to create input files, `input_{0-6}.csv`
-- `visualizer/` - The directory for visualizer.
-
-Details are intentionally omitted here. It is your responsibility to understand the contents of the repository.
-
-Discussions / Collaboration Rules / Code of Conduct
-----
 
 ### Discussion
 
 - I highly encourage you to exchange an idea between students. If you have any
-  question, or any idea, please share it at [GitHub Issues].
+  question, or any idea, please share it at [GitHub Issues] or any other places.
   It is very important to share your question among all students so that everyone can get
   benefits from the discussion there. Other students may have the same
   question. Please feel free to answer a question from other students. I will join
@@ -297,15 +297,9 @@ Discussions / Collaboration Rules / Code of Conduct
 - You might want to [watch the repository](https://help.github.com/articles/watching-repositories/)
   so that you get a notification when new question is posted.
 
-### Group
-
-- It is okay to work as a group if you prefer. The number of members in one group
-should be less than 5. Please use one GitHub repository per a group. You should mention who are the members
-in `README.md` file.
-
 ### Code of Conduct
 
-- You can get an assistance only from other STEP students or me. Please refrain from getting an assistance from any other person.
+- You can get an assistance only from other STEP students or me. Please refrain from getting an assistance from any other people (e.g. your friends, other Googlers, etc).
 - Use your best judgment when using third party libraries. No one wants to review code which just uses third-party libraries.
 - It is okay to use built-in libraries provided by programming languages.
 
@@ -316,22 +310,21 @@ Feedback from me
 
 I will make my best effort to answer your questions via:
 
--   [GitHub Issues] for this class.
-
+-   [GitHub Issues] for this class, or GitHub Issues on team's repository
+-   Slack channel
 -   Office hours
 
 I will review your code and give you a comment as much as possible, if all of the following conditions are satisfied:
 
 -   Your code is hosted on GitHub. I will use GitHub's code review system.
 
--   Your code is consistency well formatted. I don't see code which is not well formatted. That is one of pre-requirement to get your code be reviewed, in general.
-    Please make sure to use appropriate code formatter, if you are not in confident.
+-   Your code is consistency well formatted.  Please make sure to use appropriate code formatter, if you are not in confident.
 
 -   Your code is written in one of the followings: C++, Rust, Scala, Python3, Python2, Java, C, JavaScript, Haskell, OCaml, and Lisp.
     I can't promise to review your code if the code is written in other programming languages.
 
 Please feel free to [mention](https://github.com/blog/821) **@hayatoito** at
-GitHub anytime if you need my help. I will get notified. I will make my best effort to give a comment on your code.
+GitHub anytime if you need my help. I will get notified if you mention me. I will make my best effort to give a comment on your code.
 
 I will not comment much about your approach itself. I will comment mainly about the quality of your code, in terms of readability and efficiency (time and space).
 
@@ -347,10 +340,6 @@ Please use [GitHub Issues] for a new question.
 
 - A. Please feel free to send a [pull request](https://help.github.com/articles/using-pull-requests/) or file an issue at [GitHub Issues] to improve this document.
 
-- Q. Can I use any programming language?
-
-- A. Yes. It’s one of the most important skills to choose an appropriate programming language case by case.
-
 - Q. Do I have to use the same code for every challenges?
 
 - A. No.
@@ -362,6 +351,10 @@ Please use [GitHub Issues] for a new question.
 - Q. It seems that this document and the scoreboard are publicly viewable. Is this intentional?
 
 - A. Yes. I am a fan of transparency. If you have any concerns, please let me know that. I’ll honor your preference. Don’t enter any confidential information.
+
+- Q. Can I look other team's repository?
+
+- A. Yes. Don't try to hide anything. Eveything should be open. It's totally fine to exchange ideas between other teams.
 
 - Q. Visualizer does not work well on firefox (or any other browsers you are using)
 
