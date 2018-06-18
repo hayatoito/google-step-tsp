@@ -3,7 +3,7 @@
 import sys
 import math
 
-from common import print_solution, read_input
+from common import print_tour, read_input
 
 
 def distance(city1, city2):
@@ -20,18 +20,18 @@ def solve(cities):
 
     current_city = 0
     unvisited_cities = set(range(1, N))
-    visited_cities = [current_city]
+    tour = [current_city]
 
     while unvisited_cities:
-        next_city = min(
-            unvisited_cities, key=lambda unvisited_city: dist[current_city][unvisited_city])
+        next_city = min(unvisited_cities,
+                        key=lambda city: dist[current_city][city])
         unvisited_cities.remove(next_city)
-        visited_cities.append(next_city)
+        tour.append(next_city)
         current_city = next_city
-    return visited_cities
+    return tour
 
 
 if __name__ == '__main__':
     assert len(sys.argv) > 1
-    solution = solve(read_input(sys.argv[1]))
-    print_solution(solution)
+    tour = solve(read_input(sys.argv[1]))
+    print_tour(tour)

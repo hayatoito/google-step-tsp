@@ -2,7 +2,7 @@
 
 import sys
 
-from common import print_solution, read_input
+from common import print_tour, read_input
 
 
 def solve(cities):
@@ -13,5 +13,5 @@ def solve(cities):
 
 if __name__ == '__main__':
     assert len(sys.argv) > 1
-    solution = solve(read_input(sys.argv[1]))
-    print_solution(solution)
+    tour = solve(read_input(sys.argv[1]))
+    print_tour(tour)

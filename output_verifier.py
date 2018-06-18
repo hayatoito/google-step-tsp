@@ -12,22 +12,20 @@ def distance(city1, city2):
 
 
 def verify_output():
-    solvers = ('output', 'sample/random', 'sample/greedy', 'sample/sa')
     for challenge_number in range(CHALLENGES):
-        print('Challenge {}'.format(challenge_number))
-        cities = read_input('input_{}.csv'.format(challenge_number))
+        print(f'Challenge {challenge_number}')
+        cities = read_input(f'input_{challenge_number}.csv')
         N = len(cities)
-        for solver_name in solvers:
-            output_file = '{}_{}.csv'.format(solver_name,
-                                             challenge_number)
+        for output_prefix in ('output', 'sample/random', 'sample/greedy', 'sample/sa'):
+            output_file = f'{output_prefix}_{challenge_number}.csv'
             with open(output_file) as f:
                 lines = f.readlines()
                 assert lines[0].strip() == 'index'
                 tour = [int(i.strip()) for i in lines[1:N + 1]]
             assert set(tour) == set(range(N))
-            path_length = sum(distance(cities[u], cities[v])
-                              for u, v in zip(tour, tour[1:] + tour[0:1]))
-            print('{:16}: {:>10.2f}'.format(solver_name, path_length))
+            path_length = sum(distance(cities[tour[i]], cities[tour[(i + 1) % N]])
+                              for i in range(N))
+            print(f'{output_prefix:16}: {path_length:>10.2f}')
         print()
 
 

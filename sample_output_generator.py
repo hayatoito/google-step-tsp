@@ -1,24 +1,20 @@
 #!/usr/bin/env python3
 
-import sys
-import math
-
-from common import format_solution, read_input
+from common import format_tour, read_input
 
 import solver_greedy
 import solver_random
 
 CHALLENGES = 7
 
+
 def generate_sample_output():
-    solvers = ((solver_random, 'random'),
-               (solver_greedy, 'greedy'))
-    for challenge_number in range(CHALLENGES):
-        cities = read_input('input_{}.csv'.format(challenge_number))
-        for solver, solver_name in solvers:
-            solution = solver.solve(cities)
-            with open('sample/{}_{}.csv'.format(solver_name, challenge_number), 'w') as f:
-                f.write(format_solution(solution) + '\n')
+    for i in range(CHALLENGES):
+        cities = read_input(f'input_{i}.csv')
+        for solver, name in ((solver_random, 'random'), (solver_greedy, 'greedy')):
+            tour = solver.solve(cities)
+            with open(f'sample/{name}_{i}.csv', 'w') as f:
+                f.write(format_tour(tour) + '\n')
 
 
 if __name__ == '__main__':

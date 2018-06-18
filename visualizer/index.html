@@ -1,15 +1,16 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Google STEP - Travelling Salesman Problem Challenges</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>Google STEP - Travelling Salesman Problem Challenges</title>
     <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-    <script src="//d3js.org/d3.v4.js"></script>
+    <script src="//d3js.org/d3.v5.js"></script>
     <link rel="shortcut icon" href="//www.google.com/favicon.ico">
-    <script type="module" src="./travelling-salesman-problem-visualizer.js"></script>
+    <script type="module" src="./src/my-tsp/my-tsp-controller.js"></script>
     <style>
-      html, body {
+      html,
+      body {
         height: 100%;
         margin: 8px;
         background-color: white;
@@ -18,6 +19,6 @@
     </style>
   </head>
   <body>
-    <travelling-salesman-problem-visualizer></travelling-salesman-problem-visualizer>
+    <my-tsp-controller></my-tsp-controller>
   </body>
 </html>

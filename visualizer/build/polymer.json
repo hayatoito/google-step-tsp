@@ -12,7 +12,8 @@
     {
       "name": "default",
       "browserCapabilities": [
-        "es2015"
+        "es2015",
+        "push"
       ],
       "js": {
         "minify": true,
@@ -25,10 +26,10 @@
       "html": {
         "minify": true
       },
-      "bundle": true,
+      "bundle": false,
       "addServiceWorker": false,
       "addPushManifest": false,
-      "preset": "es6-bundled"
+      "preset": "es6-unbundled"
     }
   ],
   "lint": {

@@ -1,16 +1,14 @@
-import "./node_modules/@polymer/polymer/polymer-legacy.js";
-import "./node_modules/@polymer/iron-flex-layout/iron-flex-layout.js";
-import "./node_modules/@polymer/iron-icons/iron-icons.js";
-import "./node_modules/@polymer/iron-icons/maps-icons.js";
-import "./node_modules/@polymer/paper-fab/paper-fab.js";
-import "./node_modules/@polymer/paper-radio-button/paper-radio-button.js";
-import "./node_modules/@polymer/paper-radio-group/paper-radio-group.js";
-import "./travelling-salesman-problem.js";
-import {
-  PolymerElement,
-  html
-} from "./node_modules/@polymer/polymer/polymer-element.js";
-class TravellingSalesmanProblemVisualizer extends PolymerElement {
+import '@polymer/polymer/polymer-legacy.js';
+import '@polymer/iron-flex-layout/iron-flex-layout.js';
+import '@polymer/iron-icons/iron-icons.js';
+import '@polymer/iron-icons/maps-icons.js';
+import '@polymer/paper-fab/paper-fab.js';
+import '@polymer/paper-radio-button/paper-radio-button.js';
+import '@polymer/paper-radio-group/paper-radio-group.js';
+import './my-tsp.js';
+import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
+
+class MyTspController extends PolymerElement {
   static get template() {
     return html`
     <style>
@@ -21,7 +19,7 @@ class TravellingSalesmanProblemVisualizer extends PolymerElement {
         width: 220px;
         @apply --layout-vertical;
       }
-      travelling-salesman-problem {
+      #tsp {
         width: 100%;
         margin-top: 16px;
       }
@@ -66,12 +64,12 @@ class TravellingSalesmanProblemVisualizer extends PolymerElement {
         </paper-radio-group>
       </div>
       <div>
-        <h4>Solvers</h4>
-        <paper-radio-group id="solvers" selected="/output">
-          <paper-radio-button name="/output">Your output</paper-radio-button>
-          <paper-radio-button name="/sample/random">sample/random</paper-radio-button>
-          <paper-radio-button name="/sample/greedy">sample/greedy</paper-radio-button>
-          <paper-radio-button name="/sample/sa">sample/sa</paper-radio-button>
+        <h4>Output</h4>
+        <paper-radio-group id="solvers" selected="output">
+          <paper-radio-button name="output">Your output</paper-radio-button>
+          <paper-radio-button name="sample/random">sample/random</paper-radio-button>
+          <paper-radio-button name="sample/greedy">sample/greedy</paper-radio-button>
+          <paper-radio-button name="sample/sa">sample/sa</paper-radio-button>
         </paper-radio-group>
       </div>
       <div>
@@ -79,37 +77,36 @@ class TravellingSalesmanProblemVisualizer extends PolymerElement {
         <div><a href="https://github.com/hayatoito/google-step-tsp/blob/gh-pages/README.md">README</a></div>
       </div>
     </div>
-    <travelling-salesman-problem id="tsp" pathlength="{{result}}"></travelling-salesman-problem>
+    <my-tsp id="tsp" pathlength="{{result}}"></my-tsp>
 `;
   }
 
-  static get is() {
-    return "travelling-salesman-problem-visualizer";
-  }
   ready() {
     super.ready();
-    console.log(this);
-    var self = this;
-    this.$.challenges.addEventListener("paper-radio-group-changed", e => {
-      self.draw();
+    this.$.challenges.addEventListener('paper-radio-group-changed', () => {
+      this.draw();
     });
-    this.$.solvers.addEventListener("paper-radio-group-changed", () => {
-      self.draw();
+    this.$.solvers.addEventListener('paper-radio-group-changed', () => {
+      this.draw();
     });
-    self.draw();
+    this.draw();
   }
+
   run() {
     this.$.tsp.draw();
   }
+
   draw() {
-    this.$.tsp.inputfile = "/input_" + this.$.challenges.selected + ".csv";
-    this.$.tsp.solutionfile =
-      this.$.solvers.selected + "_" + this.$.challenges.selected + ".csv";
+    this.$.tsp.inputfile =
+      '../../../input_' + this.$.challenges.selected + '.csv';
+    this.$.tsp.outputfile =
+      '../../../' +
+      this.$.solvers.selected +
+      '_' +
+      this.$.challenges.selected +
+      '.csv';
     this.$.tsp.draw();
   }
 }
 
-customElements.define(
-  TravellingSalesmanProblemVisualizer.is,
-  TravellingSalesmanProblemVisualizer
-);
+customElements.define('my-tsp-controller', MyTspController);

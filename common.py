@@ -7,9 +7,9 @@ def read_input(filename):
         return cities
 
 
-def format_solution(solution):
-    return 'index\n' + '\n'.join(map(str, solution))
+def format_tour(tour):
+    return 'index\n' + '\n'.join(map(str, tour))
 
 
-def print_solution(solution):
-    print(format_solution(solution))
+def print_tour(tour):
+    print(format_tour(tour))
