@@ -347,18 +347,18 @@ git fetch alice
 # See alice's branches
 git branches -a
 
-# Create a local branch, alice-gh-pages, from alice's remote branch, alice/gh-pages
-git checkout -b alice-gh-pages alice/gh-pages
+# Create a local branch, alice-master, from alice's remote branch, alice/master
+git checkout -b alice-master alice/master
 
-# Work on local alice-gh-pages branch, as usual
+# Work on local alice-master branch, as usual
 ....
 
-# When it is ready, push the alice-gh-pages branch to your repository, https://github.com/bob/google-step-tsp.git
+# When it is ready, push the alice-master branch to your repository, https://github.com/bob/google-step-tsp.git
 # Your repository is usually called 'origin'.
-git push origin alice-gh-pages
+git push origin alice-master
 
 # Create a pull request, "New pull request", at "https://github.com/bob/google-step-tsp" with:
-# base fork: alice/google-step-tsp, base: gh-pages  .... head fork: bot/google-step-tsp, compare: alice-gh-pages
+# base fork: alice/google-step-tsp, base: master  .... head fork: bob/google-step-tsp, compare: alice-master
 ```
 
 ### Code of Conduct
