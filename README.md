@@ -106,8 +106,7 @@ command to run the HTTP server. Make sure that you are in the top directory of
 the assignment before running the command.
 
 ```shellsession
-python3 -m http.server
-# python2 -m SimpleHTTPServer # If you don’t have Python 3
+ruby -run -ehttpd . -p8000
 ```
 
 Then, open a browser and navigate to the
