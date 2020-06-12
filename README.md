@@ -1,6 +1,6 @@
 # Google STEP 2020: Travelling Salesman Problem Challenges
 
-Originally By: [Hayato Ito](https://github.com/hayatoito) (hayato@google.com)
+Originally By: [Hayato Ito](https://github.com/hayatoito) (hayato@google.com)  
 2020 Version By: [Hugh O'Cinneide](https://github.com/hkocinneide)
 (hughoc@google.com)
 
