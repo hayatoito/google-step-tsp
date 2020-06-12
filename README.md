@@ -32,17 +32,12 @@ Quoted from
 
 The assignment is hosted on GitHub,
 [https://github.com/hayatoito/google-step-tsp](https://github.com/hayatoito/google-step-tsp).
-I recommend you to [fork](https://help.github.com/articles/fork-a-repo/) this
-repository to your github account before cloning it.
 
 You can download the assignment by `git clone`:
 
 ```shellsession
-git clone https://github.com/<your-github-username>/google-step-tsp
+git clone https://github.com/hayatoito/google-step-tsp
 ```
-
-This document doesn't explain “what is git?’ nor “how to use GitHub?”. It is
-your responsibility to master the usage of git and GitHub.
 
 The repository includes sample scripts written in Python 3, rather than in
 Python 2. It’s your responsibility to install Python 3 if you want to run the
@@ -104,7 +99,8 @@ command to run the HTTP server. Make sure that you are in the top directory of
 the assignment before running the command.
 
 ```shellsession
-ruby -run -ehttpd . -p8000
+python -m http.server # For Python 3
+python -m SimpleHTTPServer 8000 # If you don’t want to install Python 3
 ```
 
 Then, open a browser and navigate to the
@@ -113,10 +109,6 @@ Then, open a browser and navigate to the
 Visualizer was only tested by Google Chrome. Using the visualizer is up-to you.
 You don’t have to use the visualizer to finish the assignment. The visualizer is
 provided for the purpose of helping you understand the problem.
-
-Once you publish a git repository, you can also enter the URL of a visualizer
-for your solutions in the [scoreboard] (e.g.
-[http://your_github_account_name.github.io/google-step-tsp/visualizer/build/default/](http://your_github_account_name.github.io/google-step-tsp/visualizer/build/default/)).
 
 See
 [GitHub Help](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/)
@@ -202,12 +194,6 @@ whenever you can find a shorter path.
 Feel free to submit, or continue working on this assignment past next Friday. I
 will go over the results in class next week, so if you want to show off how well
 you did on the leaderboard, submit by classtime!
-
-You can also enter the visualizer URL so that other studnets can see how your
-salesperson is visiting each city.
-
-Please try to publish your code, via `git push`, as often as possible so that
-other students can see your code.
 
 ## What’s included in the assignment
 
