@@ -1,1 +1,3 @@
 /visualizer/node_modules
+.python-version
+__py_cache__/*

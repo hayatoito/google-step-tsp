@@ -1,14 +1,15 @@
-# Google STEP 2018: Travelling Salesman Problem Challenges
+# Google STEP 2020: Travelling Salesman Problem Challenges
 
-[Hayato Ito](https://github.com/hayatoito) (hayato@google.com)
+Originally By: [Hayato Ito](https://github.com/hayatoito) (hayato@google.com)
+2020 Version By: [Hugh O'Cinneide](https://github.com/hkocinneide)
+(hughoc@google.com)
 
 ## Quick Links
 
 - [Scoreboard]
-- [GitHub Issues]
 
 [scoreboard]:
-  https://docs.google.com/spreadsheets/d/1Aa_NNQf7sFANuHKt0FTvUBQ83QO3OOKZjifhsmjOxqc/edit?usp=sharhing
+  https://docs.google.com/spreadsheets/d/1ShWRJzDgTbrXe6--a0IhyJeD1Wdoa7ln5b3lxsgSlW8/edit?usp-sharing
 [github issues]: https://github.com/hayatoito/google-step-tsp/issues
 
 ## Problem Statement
@@ -63,9 +64,6 @@ See _Data Format Specification_ section to know the format of input and output
 files.
 
 ### Your tasks
-
-Note: As explainerd later, you will work as a member of a _team_. Please replace
-_you_ with a _team_, as necessary.
 
 - Write a program, solving each TSP by designing and implementing an algorithm.
 - Overwrite each output file, `output_{0-6}.csv`, with the output of your
@@ -184,95 +182,32 @@ formatted CSV files as input.
 
 ## Schedule
 
-### The class begins: 2018-06-22 (Fri) 5:00pm (JST)
+### The class begins: 2020-06-12 (Fri) 5:30pm (JST)
 
-The class starts. You are strongly encouraged to bring your laptop.
-
-1.  I'll give you a special lecture, called "How the Computer Works: Memory and
-    Data Structures for Hackers" at the beginning (in 2 hours).
-
-2.  Then, I'll explain this "TSP" assignments. You are expected to understand
-    the problem and solve a challenge with a small N in the class, if we have
-    enough time.
+I'll explain the "TSP" assignment.
 
 Action items on Friday:
 
-1.  [All] Decide a team:
+1.  Fill out your name in the first column of the [Scoreboard]:
 
-    - Enter your GitHub account name in "Team members" field in the
-      [Scoreboard].
-    - e.g. Team XXX: "alice, bob, charlie"
+2.  Fork this repository into your own GitHub.
 
-2.  [Team] Decide the team's GitHub repository
+### Coding: From: 2020-06-12 (Fri) 8:00pm - To: 2020-06-19 (Fri) 5:00pm
 
-    - Enter the team's GitHub repository location in the [Scoreboard].
-    - e.g. Use alice's repository as the team's repository:
-      "https://github.com/alice/google-step-tsp/"
-
-3.  [Team] Invite team members as collaborators to the team's repository.
-
-    - See
-      [Inviting collaborators to a personal repository](https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/)
-      fore more info.
-
-4.  [All] Watch the team's repository
-
-    - See
-      [watching and unwatching repositories](https://help.github.com/articles/watching-and-unwatching-repositories/)
-      for more info.
-
-5.  [All] "Say Hello" to the team's GitHub Issues:
-
-    - e.g. Go to
-      [https://github.com/alice/google-step-tsp/issues](https://github.com/alice/google-step-tsp/issues),
-      click "New Issue", and say hello to the team; "Hi, I'm bob".
-
-6.  [Optional] Enjoy dinner with team members
-
-    - Each team might want to discuss the followings:
-      - How to collaborate?
-      - Whether to attend office hours or not. If so, when?
-    - If the team can come to the office hours, please input _firstname_,
-      _lastname_, and _email_ (optional) for each team member who can come in
-      this
-      [office hours sign up sheet](https://docs.google.com/spreadsheets/d/1Aa_NNQf7sFANuHKt0FTvUBQ83QO3OOKZjifhsmjOxqc/edit#gid=2110766836).
-
-### Coding: From: 2018-06-22 (Fri) 8:00pm - To: 2018-06-29 (Fri) 5:00pm
-
-The deadline of the final submission is the next Friday.
-
-Until the deadline, you (team) are expected to improve your algorithm and enter
+Until next Friday, you are expected to improve your algorithm and enter
 the score in the [scoreboard] manually for each challenge. You can update the
 score as many times as needed. I highly recommend you to update your score
 whenever you can find a shorter path.
 
-You can also enter the visualizer URL so that other teams can see how your
-team's salesperson is visiting each city.
+Feel free to submit, or continue working on this assignment past next Friday. I
+will go over the results in class next week, so if you want to show off how well
+you did on the leaderboard, submit by classtime!
+
+You can also enter the visualizer URL so that other studnets can see how your
+salesperson is visiting each city.
 
 Please try to publish your code, via `git push`, as often as possible so that
-other members or other teams can see your code.
-
-#### (Optional) Office hours: (2018-06-26 (Tue) 5:00pm - )
-
-I will hold office hours on next Tuesday at Google Tokyo office. I will be
-available until nealy 10:00pm. You can come anytime and leave anytime.
-
-As a side bonus for office hours attendees, I have a plan to explain the
-following topics very roughly there:
-
-- How to improve code readability
-- Essential tools for coding (lint, auto code formatter, and others)
-- How to use `git` and GitHub effectively as a team
-- How the computer runs a program (loading a program binary, stack and heap)
-- Programming Languages: Pros and Cons (Interpreter, Compiler, Type Systems)
-- Using [Parser Combinators](https://en.wikipedia.org/wiki/Parser_combinator) to
-  solve the _calculator homework_ (in class 3) in a modern way
-
-All of these are optional topics. If are interested in, please join us anytime.
-
-#### (Optional) Yet another optional task: Challenge 7: 2018-06-27 (Wed)
-
-I will announce it on 2018-06-28 (Wed).
+other students can see your code.
 
 ## What’s included in the assignment
 
@@ -297,106 +232,19 @@ the assignment, including, but not limited to:
 Details are intentionally omitted here. It is your responsibility to understand
 the contents of the repository.
 
-## Collaboration / Code of Conduct
+## Code of Conduct
 
-### Team
-
-In this year, you are expected to work as a member of a team. We dicide a team
-on Friday. Bacially, we divide people into teams by a programming language a
-team uses.
-
-Please use one GitHub repository per a team. You should mention who are the
-members in `README.md` file in the repository. Please feel free to update
-`README.md` file.
-
-Regarding office hours, I recommend team members in the same team to attend the
-office hours together as much as you can.
-
-### Hints: Work as a team
-
-It's up to each team how to collaborate. I suggest:
-
-- Use GitHub's isseus on team's repository effectively.
-  - Share any question there so that other team members can help you
-    - e.g. "I got _conflicts_ in git, and I don't know how to resolve it. What
-      should I do???"
-- Help team members. Share what you have done as much as possible.
-- Use slack chat. I can respond there.
-
-Regarding "PR" ([pull request]), the followings are quick hints:
-
-[pull request]:
-  https://help.github.com/categories/collaborating-with-issues-and-pull-requests/
-
-Assuming that:
-
-- You are `bob`. Your repository is https://github.com/bob/google-step-tsp.git
-
-- You are trying to send a pull request to `alice`'s repository,
-  https://github.com/alice/google-step-tsp.git
-
-In your google-step-tsp directory, which was cloned from
-https://github.com/bob/google-step-tsp.git, do the followings:
-
-```shellsession
-# Add and fetch alice's repository
-git remote add alice https://github.com/alice/google-step-tsp.git
-git fetch alice
-
-# See alice's branches
-git branches -a
-
-# Create a local branch, alice-master, from alice's remote branch, alice/master
-git checkout -b alice-master alice/master
-
-# Work on local alice-master branch, as usual
-....
-
-# When it is ready, push the alice-master branch to your repository, https://github.com/bob/google-step-tsp.git
-# Your repository is usually called 'origin'.
-git push origin alice-master
-
-# Create a pull request, "New pull request", at "https://github.com/bob/google-step-tsp" with:
-# base fork: alice/google-step-tsp, base: master  .... head fork: bob/google-step-tsp, compare: alice-master
-```
-
-### Code of Conduct
-
-- You can get an assistance only from other STEP students or me.
-- Don't get any assistance from any other people (e.g. your friends, other
-  Googlers, etc). That can be considered as a _cheat_.
+- Since we are competing for the best algorithm, please do not cheat:
+- You can get an assistance only from other STEP students, mentors, or
+  lecturers..
+- Don't get any assistance from any other people (e.g. your friends, professors,
+  etc).
 - Use your best judgment when using third party libraries. No one wants to
   review your code which just uses third-party libraries.
 - It is okay to use built-in libraries provided by programming languages, of
   course.
 
-Please see also
-[code of conduct](https://online.berklee.edu/about/code-of-conduct), if you are
-interested in, as a general code of conduct, as a reference.
-
-## Feedback from me
-
-I will make my best effort to answer your questions via:
-
-- "GitHub Issues" on each team's GitHub repository, or
-  [on this class](https://github.com/hayatoito/google-step-tsp/issues).
-- Slack channel
-- Office hours
-
-I will review your code and give you a comment as much as possible.
-
-Please feel free to [mention](https://github.com/blog/821) **@hayatoito** at
-GitHub anytime if your team needs my help. I will get notified if you mention me
-there.
-
-I will not comment much about your team's approach itself. I will comment mainly
-about the quality of your code, in terms of readability and efficiency (time and
-space) in Google Standard.
-
-You can also comment on other team member's code at GitHub. Please get familiar
-with Git and GitHub, and use them effectively as a collaboration tool.
-
-### Tips for better collaboration
+## Tips for Development
 
 The following tips might be helpful:
 
@@ -407,16 +255,10 @@ The following tips might be helpful:
   appropriate code formatter, if you are not in confident. Don't try to format
   your code by yourself if a tool can do that.
 
-- I can review your code if your code is written in one of the followings: C++,
-  Rust, Scala, Python 3, Python 2, Java, C, JavaScript, TypeScript, Haskell,
-  OCaml, and Lisp. I can't promise to review your code if the code is written in
-  other programming languages.
-
 ## FAQ
 
 This FAQ includes the questions and the answers in the past years, as is. Some
-Q/A might be obsolete for this year. Please use [GitHub Issues] for a new
-question.
+Q/A might be obsolete for this year.
 
 - Q. I found a typo in this document.
 
@@ -424,7 +266,7 @@ question.
   [pull request](https://help.github.com/articles/using-pull-requests/), as a
   practice, or file an issue at [GitHub Issues].
 
-- Q. Do I have to use the same code for every challenges?
+- Q. Do I have to use the same code for every challenge?
 
 - A. No.
 
@@ -440,10 +282,10 @@ question.
   know that. I’ll honor your preference. Don’t enter any confidential
   information.
 
-- Q. Can I look other team's repository?
+- Q. Can I look other student's repository?
 
 - A. Yes. Don't try to hide anything. Eveything should be open. It's fine to
-  exchange ideas between other teams, or borrow their ideas.
+  exchange ideas between students, or borrow their ideas.
 
 ## Acknowledgments
 
