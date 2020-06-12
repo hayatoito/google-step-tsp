@@ -66,26 +66,6 @@ files.
 - Enter the _path length_ of your output in the [scoreboard], for each
   challenge. Needless to say, a shorter path is better then a longer path.
 
-### An optional task (Speed challenge)
-
-What matters in this optional task is your program's _speed_ (execution time).
-The path length does not matter as long as it is meets the condition.
-
-Your task is: Given `input_6.csv`, write a program which outputs a path shorter
-than `45,000`
-
-Input your program's execution time in the [scoreboard]. Faster (smaller) is
-better.
-
-You can measure the execution time by `time` command. For example,
-
-```shellsession
-$ time yourprogram input_6.csv solution_yours_6.csv
-2.96s user 0.07s system 97% cpu 3.116 total
-```
-
-In this case, your score is `3.116` (s).
-
 ### Visualizer
 
 The demo page of the visualizer is
