@@ -94,7 +94,7 @@ In this case, your score is `3.116` (s).
 ### Visualizer
 
 The demo page of the visualizer is
-[here](http://hayato.io/google-step-tsp/visualizer/build/default/).
+[here](https://hkocinneide.github.io/google-step-tsp/visualizer/build/default/).
 
 The assignment includes a helper Web page,
 `visualizer/build/default/index.html`, which visualizes your solutions. You need
