@@ -32,14 +32,14 @@ Quoted from
 
 The assignment is hosted on GitHub,
 [https://github.com/hayatoito/google-step-tsp](https://github.com/hayatoito/google-step-tsp).
+I recommend you to [fork](https://help.github.com/articles/fork-a-repo/) this
+repository to your github account before cloning it.
+
 You can download the assignment by `git clone`:
 
 ```shellsession
-git clone https://github.com/hayatoito/google-step-tsp
+git clone https://github.com/<your-github-username>/google-step-tsp
 ```
-
-I recommend you to [fork](https://help.github.com/articles/fork-a-repo/) this
-repository to your github account before cloning it.
 
 This document doesn't explain “what is git?’ nor “how to use GitHub?”. It is
 your responsibility to master the usage of git and GitHub.
