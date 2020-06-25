@@ -2,7 +2,7 @@
 
 import random
 
-CHALLENGE_SIZES = (5, 8, 16, 64, 128, 512, 2048)
+CHALLENGE_SIZES = (5, 8, 16, 64, 128, 512, 2048, 8192)
 
 
 def generate_cities(n, max_x=1600.0, max_y=900.0, seed=1):
