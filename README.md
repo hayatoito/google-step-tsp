@@ -1,7 +1,7 @@
-# Google STEP 2020: Travelling Salesman Problem Challenges
+# Google STEP 2021: Travelling Salesman Problem Challenges
 
 Originally By: [Hayato Ito](https://github.com/hayatoito) (hayato@google.com)  
-2020 Version By: [Hugh O'Cinneide](https://github.com/hkocinneide)
+2020, 2021 Versions By: [Hugh O'Cinneide](https://github.com/hkocinneide)
 (hughoc@google.com)
 
 ## Quick Links
@@ -9,7 +9,7 @@ Originally By: [Hayato Ito](https://github.com/hayatoito) (hayato@google.com)
 - [Scoreboard]
 
 [scoreboard]:
-  https://docs.google.com/spreadsheets/d/1ShWRJzDgTbrXe6--a0IhyJeD1Wdoa7ln5b3lxsgSlW8/edit?usp-sharing
+  https://docs.google.com/spreadsheets/d/1ecQoToBBtiEXSqWiLMeuUVaiAxZlhDZepP22UsiClww/edit?usp=sharing
 [github issues]: https://github.com/hayatoito/google-step-tsp/issues
 
 ## Problem Statement
@@ -154,7 +154,7 @@ formatted CSV files as input.
 
 ## Schedule
 
-### The class begins: 2020-06-12 (Fri) 5:30pm (JST)
+### The class begins: 2021-06-04 (Fri) 6:30pm (JST)
 
 I'll explain the "TSP" assignment.
 
@@ -164,7 +164,7 @@ Action items on Friday:
 
 2.  Fork this repository into your own GitHub.
 
-### Coding: From: 2020-06-12 (Fri) 8:00pm - To: 2020-06-19 (Fri) 5:00pm
+### Coding: From: 2021-06-04 (Fri) 8:00pm - To: 2021-06-11 (Fri) 5:00pm
 
 Until next Friday, you are expected to improve your algorithm and enter
 the score in the [scoreboard] manually for each challenge. You can update the
@@ -205,8 +205,9 @@ the contents of the repository.
   lecturers..
 - Don't get any assistance from any other people (e.g. your friends, professors,
   etc).
-- Use your best judgment when using third party libraries. No one wants to
-  review your code which just uses third-party libraries.
+- Use your best judgment when using third party libraries. If it will be
+  non-trivial for a reviewer to understand the library, it may be doing too
+  much work that you could be learning from.
 - It is okay to use built-in libraries provided by programming languages, of
   course.
 
@@ -230,7 +231,8 @@ Q/A might be obsolete for this year.
 
 - A. Please feel free to send a
   [pull request](https://help.github.com/articles/using-pull-requests/), as a
-  practice, or file an issue at [GitHub Issues].
+  practice, or file an issue at [GitHub Issues] if you are not confident using
+  git.
 
 - Q. Do I have to use the same code for every challenge?
 
