@@ -49,6 +49,7 @@ define(["../../node_modules/@polymer/polymer/polymer-legacy.js","../../node_modu
           <paper-radio-button name="4">4: N=128</paper-radio-button>
           <paper-radio-button name="5">5: N=512</paper-radio-button>
           <paper-radio-button name="6">6: N=2048</paper-radio-button>
+          <paper-radio-button name="7">7: N=8192</paper-radio-button>
         </paper-radio-group>
       </div>
       <div>
