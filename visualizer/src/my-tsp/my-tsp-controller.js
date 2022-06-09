@@ -74,7 +74,7 @@ class MyTspController extends PolymerElement {
       </div>
       <div>
         <h4>Links</h4>
-        <div><a href="https://github.com/hayatoito/google-step-tsp/blob/gh-pages/README.md">README</a></div>
+        <div><a href="https://github.com/hayatoito/google-step-tsp/blob/main/README.md">README</a></div>
       </div>
     </div>
     <my-tsp id="tsp" pathlength="{{result}}"></my-tsp>
