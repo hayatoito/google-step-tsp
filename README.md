@@ -1,15 +1,15 @@
 # Google STEP 2022: Travelling Salesman Problem Challenges
 
 Originally By: [Hayato Ito](https://github.com/hayatoito) (hayato@google.com)  
-2020-2022 Versions By: [Hugh O'Cinneide](https://github.com/hkocinneide)
-(hughoc@google.com)
+2020-2023 Versions By: [Hugh O'Cinneide](https://github.com/hkocinneide)
+(hughoc@google.com) and [Hiromu Ikeda](https://github.com/rombot98) (hiromu@google.com)
 
 ## Quick Links
 
 - [Scoreboard]
 
 [scoreboard]:
-  https://docs.google.com/spreadsheets/d/18YQHRnnJ-p-PW9OVtXDRtMl02zha1MTEjXYz-cSNXyE/edit?usp=sharing
+  https://docs.google.com/spreadsheets/d/16JEV8SAJkFC0B4zuYsgoMQg-VHo5kQx_x-9wVmfqEkM/edit?usp=sharing
 [github issues]: https://github.com/hayatoito/google-step-tsp/issues
 
 ## Problem Statement
@@ -154,7 +154,7 @@ formatted CSV files as input.
 
 ## Schedule
 
-### The class begins: 2022-06-03 (Fri) 6:40pm (JST)
+### The class begins: 2023-06-09 (Fri) 5:00pm
 
 I'll explain the "TSP" assignment.
 
@@ -164,15 +164,15 @@ Action items on Friday:
 
 2.  Fork this repository into your own GitHub.
 
-### Coding: From: 2022-06-03 (Fri) 8:00pm - To: 2022-06-10 (Fri) 5:00pm
+### Coding: From: 2023-06-09 (Fri) 8:00pm - To: 2023-06-23 (Fri) 5:00pm
 
-Until next Friday, you are expected to improve your algorithm and enter
+For the next two weeks, you are expected to improve your algorithm and enter
 the score in the [scoreboard] manually for each challenge. You can update the
 score as many times as needed. I highly recommend you to update your score
 whenever you can find a shorter path.
 
-Feel free to submit, or continue working on this assignment past next Friday. I
-will go over the results in class next week, so if you want to show off how well
+Feel free to submit, or continue working on this assignment past class 7. I
+will go over the results in class 7, so if you want to show off how well
 you did on the leaderboard, submit by classtime!
 
 ## What’s included in the assignment
