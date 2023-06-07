@@ -1,4 +1,4 @@
-# Google STEP 2022: Travelling Salesman Problem Challenges
+# Google STEP 2022: Travelling Salesperson Problem Challenges
 
 Originally By: [Hayato Ito](https://github.com/hayatoito) (hayato@google.com)  
 2020-2023 Versions By: [Hugh O'Cinneide](https://github.com/hkocinneide)
@@ -15,7 +15,7 @@ Originally By: [Hayato Ito](https://github.com/hayatoito) (hayato@google.com)
 ## Problem Statement
 
 In this assignment, you will design an algorithm to solve a fundamental problem
-faced by every travelling salesperson, called _Travelling Salesman Problem_
+faced by every travelling salesperson, called _Travelling Salesperson Problem_
 (TSP). I’ll explain TSP in the onsite class. TSP is very famous problem. See
 [Wikipedia](http://en.wikipedia.org/wiki/Travelling_salesman_problem). You can
 understand the problem without any difficulties.
@@ -23,10 +23,10 @@ understand the problem without any difficulties.
 Quoted from
 [Wikipedia](http://en.wikipedia.org/wiki/Travelling_salesman_problem):
 
-> The travelling salesman problem (TSP) asks the following question: Given a
-> list of cities and the distances between each pair of cities, what is the
-> shortest possible route that visits each city exactly once and returns to the
-> origin city?
+> The travelling salesman problem (also called the travelling salesperson problem or TSP) 
+> asks the following question: Given a list of cities and the distances between each pair 
+> of cities, what is the shortest possible route that visits each city exactly once and 
+> returns to the origin city?
 
 ## Assignment
 
