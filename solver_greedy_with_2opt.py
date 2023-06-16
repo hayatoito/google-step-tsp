@@ -153,7 +153,7 @@ def count_cross(tour, cities):
 
 
 # 交差する点同士を交換する時に、交換してスコアがよくなるなら交換、そうでないならその交差は飛ばす
-def solve_0(cities, tour, min_path_length=0):
+def solve(cities, tour, min_path_length=0):
     N = len(cities)
     min_path_length = sum(
         distance(cities[tour[i]], cities[tour[(i + 1) % N]]) for i in range(N)
@@ -182,7 +182,7 @@ def solve_0(cities, tour, min_path_length=0):
                 )
                 if path_length < min_path_length:
                     min_path_length = path_length
-                    return solve_0(cities, new_tour, min_path_length)
+                    return solve(cities, new_tour, min_path_length)
                 else:
                     break
             idx += 1
@@ -245,9 +245,9 @@ def two_opt_original(cities, tour):
             idx += 1
 
 
-# city2以外のもっとも近いcityのうち、crossが最も少なくなるものを選ぶ22
+# city2以外のもっとも近いcityのうち、crossが最も少なくなるものを選ぶ
 # city2以外の最も近いcいtyを近い順にk個選び、一つ前よりscoreがよくなれば入れ替えるをくり返す
-def solve(cities, tour, min_cross_counts=10000000000):
+def solve_2_2(cities, tour, min_cross_counts=10000000000):
     for idx, city in enumerate(tour):
         current_city = city
         current_city_idx = idx
@@ -313,7 +313,7 @@ def solve(cities, tour, min_cross_counts=10000000000):
                 if count_cross(greedy_with_2opt_tour, cities) < min_cross_counts:
                     min_cross_counts = count_cross(greedy_with_2opt_tour, cities)
 
-                return solve(cities, greedy_with_2opt_tour, min_cross_counts)
+                return solve_2_2(cities, greedy_with_2opt_tour, min_cross_counts)
             idx += 1
 
 
