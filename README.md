@@ -1,7 +1,7 @@
 # Google STEP 2023: Travelling Salesperson Problem Challenges
 
 Originally By: [Hayato Ito](https://github.com/hayatoito) (hayato@google.com)  
-2020-2023 Versions By: [Hugh O'Cinneide](https://github.com/hkocinneide)
+2020-2024 Versions By: [Hugh O'Cinneide](https://github.com/hkocinneide)
 (hughoc@google.com) and [Hiromu Ikeda](https://github.com/rombot98) (hiromu@google.com)
 
 ## Quick Links
@@ -9,7 +9,7 @@ Originally By: [Hayato Ito](https://github.com/hayatoito) (hayato@google.com)
 - [Scoreboard]
 
 [scoreboard]:
-  https://docs.google.com/spreadsheets/d/16JEV8SAJkFC0B4zuYsgoMQg-VHo5kQx_x-9wVmfqEkM/edit?usp=sharing
+  https://docs.google.com/spreadsheets/d/1JwaOYVxMf0oTrgIkw1jiwd7FTIsIm2CNdNIhHRdInTk/edit?usp=sharing&resourcekey=0-AZAtJDUk0p-6bR5UCQSTQA
 [github issues]: https://github.com/hayatoito/google-step-tsp/issues
 
 ## Problem Statement
