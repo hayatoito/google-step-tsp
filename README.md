@@ -183,7 +183,6 @@ the assignment, including, but not limited to:
 - `solver_random.py` - Sample stupid solver. You never lose to this stupid one.
 - `sample/random_{0-6}.csv` - Sample output files by solver_random.py.
   this definitely.
-- `sample/greedy_{0-6}.csv` - Sample output files by solver_greedy.py.
 - `sample/sa_{0-6}.csv` - Yet another sample output files. I expect all of you
   will beat this one too. The solver itself is not included intentionally.
 - `output_{0-6}.csv` - You should overwrite these files with your program's

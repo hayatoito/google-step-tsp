@@ -2,7 +2,6 @@
 
 from common import format_tour, read_input
 
-import solver_greedy
 import solver_random
 
 CHALLENGES = 7
@@ -11,7 +10,7 @@ CHALLENGES = 7
 def generate_sample_output():
     for i in range(CHALLENGES):
         cities = read_input(f'input_{i}.csv')
-        for solver, name in ((solver_random, 'random'), (solver_greedy, 'greedy')):
+        for solver, name in [(solver_random, 'random')]:
             tour = solver.solve(cities)
             with open(f'sample/{name}_{i}.csv', 'w') as f:
                 f.write(format_tour(tour) + '\n')
