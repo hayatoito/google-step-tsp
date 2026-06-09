@@ -1,15 +1,15 @@
-# Google STEP 2025: Travelling Salesperson Problem Challenges
+# Google STEP 2026: Travelling Salesperson Problem Challenges
 
 Originally By: [Hayato Ito](https://github.com/hayatoito) (hayato@google.com)  
-2020-2025 Versions By: [Hugh O'Cinneide](https://github.com/hkocinneide)
-(hughoc@google.com) and [Hiromu Ikeda](https://github.com/rombot98) (hiromu@google.com)
+2020-2026 Versions By: [Hugh O'Cinneide](https://github.com/hkocinneide)
+(hughoc@google.com), [Hiromu Ikeda](https://github.com/rombot98) (hiromu@google.com) and [Ayaka Kinoshita](https://github.com/oribe1115) (oribe@google.com)
 
 ## Quick Links
 
 - [Scoreboard]
 
 [scoreboard]:
-  https://docs.google.com/spreadsheets/d/1ECsA-42FVfmnVybefLyDICtU931XVUaWai6flC7pYHE/edit?usp=sharing&resourcekey=0-jIPcyuQKOjK78kiA0PHI8g
+  https://docs.google.com/spreadsheets/d/1uOhewb9KtMENU5AyLF8VcsyosQGOfkeh-Kka8M-DYcI/edit?usp=sharing&resourcekey=0-w2dZASN1e-X_gcl8vicB4Q
 [github issues]: https://github.com/hayatoito/google-step-tsp/issues
 
 ## Problem Statement
@@ -154,7 +154,7 @@ formatted CSV files as input.
 
 ## Schedule
 
-### The class begins: 2025-06-20 (Fri) 5:00pm
+### The class begins: 2026-06-12 (Fri) 5:00pm
 
 I'll explain the "TSP" assignment.
 
@@ -164,7 +164,7 @@ Action items on Friday:
 
 2.  Fork this repository into your own GitHub.
 
-### Coding: From: 2025-06-20 (Fri) 8:00pm - To: 2025-07-04 (Fri) 5:00pm
+### Coding: From: 2026-06-12 (Fri) 8:00pm - To: 2026-06-19 (Fri) 5:00pm
 
 For the next two weeks, you are expected to improve your algorithm and enter
 the score in the [scoreboard] manually for each challenge. You can update the
@@ -182,7 +182,6 @@ the assignment, including, but not limited to:
 
 - `solver_random.py` - Sample stupid solver. You never lose to this stupid one.
 - `sample/random_{0-6}.csv` - Sample output files by solver_random.py.
-- `solver_greedy.py` - Sample solver using the greedy algorithm. You should beat
   this definitely.
 - `sample/greedy_{0-6}.csv` - Sample output files by solver_greedy.py.
 - `sample/sa_{0-6}.csv` - Yet another sample output files. I expect all of you
