@@ -1,21 +1,21 @@
-# Google STEP 2022: Travelling Salesman Problem Challenges
+# Google STEP 2026: Travelling Salesperson Problem Challenges
 
 Originally By: [Hayato Ito](https://github.com/hayatoito) (hayato@google.com)  
-2020-2022 Versions By: [Hugh O'Cinneide](https://github.com/hkocinneide)
-(hughoc@google.com)
+2020-2026 Versions By: [Hugh O'Cinneide](https://github.com/hkocinneide)
+(hughoc@google.com), [Hiromu Ikeda](https://github.com/rombot98) (hiromu@google.com) and [Ayaka Kinoshita](https://github.com/oribe1115) (oribe@google.com)
 
 ## Quick Links
 
 - [Scoreboard]
 
 [scoreboard]:
-  https://docs.google.com/spreadsheets/d/18YQHRnnJ-p-PW9OVtXDRtMl02zha1MTEjXYz-cSNXyE/edit?usp=sharing
+  https://docs.google.com/spreadsheets/d/1uOhewb9KtMENU5AyLF8VcsyosQGOfkeh-Kka8M-DYcI/edit?usp=sharing&resourcekey=0-w2dZASN1e-X_gcl8vicB4Q
 [github issues]: https://github.com/hayatoito/google-step-tsp/issues
 
 ## Problem Statement
 
 In this assignment, you will design an algorithm to solve a fundamental problem
-faced by every travelling salesperson, called _Travelling Salesman Problem_
+faced by every travelling salesperson, called _Travelling Salesperson Problem_
 (TSP). I’ll explain TSP in the onsite class. TSP is very famous problem. See
 [Wikipedia](http://en.wikipedia.org/wiki/Travelling_salesman_problem). You can
 understand the problem without any difficulties.
@@ -23,10 +23,10 @@ understand the problem without any difficulties.
 Quoted from
 [Wikipedia](http://en.wikipedia.org/wiki/Travelling_salesman_problem):
 
-> The travelling salesman problem (TSP) asks the following question: Given a
-> list of cities and the distances between each pair of cities, what is the
-> shortest possible route that visits each city exactly once and returns to the
-> origin city?
+> The travelling salesman problem (also called the travelling salesperson problem or TSP) 
+> asks the following question: Given a list of cities and the distances between each pair 
+> of cities, what is the shortest possible route that visits each city exactly once and 
+> returns to the origin city?
 
 ## Assignment
 
@@ -154,7 +154,7 @@ formatted CSV files as input.
 
 ## Schedule
 
-### The class begins: 2022-06-03 (Fri) 6:40pm (JST)
+### The class begins: 2026-06-12 (Fri) 5:00pm
 
 I'll explain the "TSP" assignment.
 
@@ -164,15 +164,15 @@ Action items on Friday:
 
 2.  Fork this repository into your own GitHub.
 
-### Coding: From: 2022-06-03 (Fri) 8:00pm - To: 2022-06-10 (Fri) 5:00pm
+### Coding: From: 2026-06-12 (Fri) 8:00pm - To: 2026-06-19 (Fri) 5:00pm
 
-Until next Friday, you are expected to improve your algorithm and enter
+For the next two weeks, you are expected to improve your algorithm and enter
 the score in the [scoreboard] manually for each challenge. You can update the
 score as many times as needed. I highly recommend you to update your score
 whenever you can find a shorter path.
 
-Feel free to submit, or continue working on this assignment past next Friday. I
-will go over the results in class next week, so if you want to show off how well
+Feel free to submit, or continue working on this assignment past class 7. I
+will go over the results in class 7, so if you want to show off how well
 you did on the leaderboard, submit by classtime!
 
 ## What’s included in the assignment
@@ -182,9 +182,7 @@ the assignment, including, but not limited to:
 
 - `solver_random.py` - Sample stupid solver. You never lose to this stupid one.
 - `sample/random_{0-6}.csv` - Sample output files by solver_random.py.
-- `solver_greedy.py` - Sample solver using the greedy algorithm. You should beat
   this definitely.
-- `sample/greedy_{0-6}.csv` - Sample output files by solver_greedy.py.
 - `sample/sa_{0-6}.csv` - Yet another sample output files. I expect all of you
   will beat this one too. The solver itself is not included intentionally.
 - `output_{0-6}.csv` - You should overwrite these files with your program's

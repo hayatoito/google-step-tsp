@@ -32,7 +32,7 @@ define(["../../node_modules/@polymer/polymer/polymer-legacy.js","../../node_modu
     </style>
     <div nav="">
       <div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png" height="50">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Google_2026_logo.svg/330px-Google_2026_logo.svg.png" height="50">
         <h4>Travelling Salesman Problem Challenges</h4>
       </div>
       <div id="control">
@@ -49,6 +49,7 @@ define(["../../node_modules/@polymer/polymer/polymer-legacy.js","../../node_modu
           <paper-radio-button name="4">4: N=128</paper-radio-button>
           <paper-radio-button name="5">5: N=512</paper-radio-button>
           <paper-radio-button name="6">6: N=2048</paper-radio-button>
+          <paper-radio-button name="7">7: N=8192</paper-radio-button>
         </paper-radio-group>
       </div>
       <div>
@@ -56,13 +57,12 @@ define(["../../node_modules/@polymer/polymer/polymer-legacy.js","../../node_modu
         <paper-radio-group id="solvers" selected="output">
           <paper-radio-button name="output">Your output</paper-radio-button>
           <paper-radio-button name="sample/random">sample/random</paper-radio-button>
-          <paper-radio-button name="sample/greedy">sample/greedy</paper-radio-button>
           <paper-radio-button name="sample/sa">sample/sa</paper-radio-button>
         </paper-radio-group>
       </div>
       <div>
         <h4>Links</h4>
-        <div><a href="https://github.com/hayatoito/google-step-tsp/blob/gh-pages/README.md">README</a></div>
+        <div><a href="https://github.com/hayatoito/google-step-tsp/blob/main/README.md">README</a></div>
       </div>
     </div>
     <my-tsp id="tsp" pathlength="{{result}}"></my-tsp>
